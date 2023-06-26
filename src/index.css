@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* background-color: rgb(245 245 245) */
+}
+
+html {
+  overflow: -moz-hidden-unscrollable;
+  height: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.ant-layout-sider::-webkit-scrollbar {
+  display: none;
+}
+
+/* -------------------Login page style----------------------------- */
+
+.login-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 440px;
+  /* Adjust the width as needed */
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  transition: width 0.5s ease;
+}
+
+
+/* --------------------logo style----------------------------- */
+.ant-image {
+  margin-left: 30px;
+  width: 130px;
+}
+
+/* --------------------card style----------------------------- */
+
+.ant-card-bordered {
+  box-shadow: 4px 3px 5px rgba(83, 84, 85, 0.575);
+}
+
+/* --------------------Radio button style----------------------- */
+
+.ant-radio-wrapper {
+  margin-right: 16px;
+}
+
+/* --------------------date picker style----------------------------- */
+.ant-picker-range {
+  margin-left: 20px;
+}
+
+/* --------------------drop down info style----------------------------- */
+.ant-dropdown-trigger {
+  margin-right: 20px;
+  color: #00b3be;
+  font-size: 28px;
+}
+
+/* --------------------tree menu style----------------------------- */
+.ant-tree-switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ant-tree-node-content-wrapper {
+  padding: 0;
+  background-color: #00b3be32;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding-right: 10px;
+  font-size: 20px;
+  background-color: #FFFFFF00;
+  height: 48px;
+}
+
+.ant-tree-node-content-wrapper:hover {
+  background-color: #00b3be32 !important;
+}
+
+.ant-tree-indent {
+  display: none
+}
+
+:where(.ant-tree-node-content-wrapper) {
+  background-color: #FFFFFF00 !important;
+}
+
+.ant-tree-iconEle {
+  padding-right: 20px;
+}
+
+/* 箭头后置 */
+/* .ant-tree-treenode :nth-child(2) {
+  order: 3;
+} */
+
+/* unselected node border botom */
+.ant-tree-treenode {
+  border-bottom: 1px solid #00000010;
+}
